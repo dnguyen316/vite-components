@@ -5,8 +5,6 @@ import styles from './input.module.css';
 
 export type InputProps = ComponentProps<'input'>;
 
-const Input = ({ className, ...props }: InputProps) => {
+export const Input = ({ className, ...props }: InputProps) => {
   return <input className={clsx(styles.input, className)} {...props} />;
 };
-
-export default Input;
